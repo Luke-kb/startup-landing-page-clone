@@ -1,3 +1,29 @@
+body {
+  background-color: LightGray;
+}
+div {
+  border: 10px solid Chocolate;
+}
+
+.navigation-bar {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  border-bottom: 2px solid grey;
+  z-index: 9999;
+  height: 4.35rem;
+}
+
+.navigation-bar > .content {
+  height: 4.35rem;
+  background-color: white;
+}
+
+.navigation-bar > links li {
+  display: inline-block;
+}
+
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -18,13 +44,6 @@ html {
 
 body {
   margin: 0;
-}
-
-body {
-  background-color: LightGray;
-}
-div {
-  border: 10px solid Chocolate;
 }
 
 /* HTML5 display definitions
@@ -432,3 +451,4 @@ td,
 th {
   padding: 0;
 }
+
