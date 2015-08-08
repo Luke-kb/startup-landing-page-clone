@@ -435,44 +435,34 @@ th {
 
 body {
   background-color: LightGray;
-  margin: 0;
-  padding: 0;
-  border-top: 0;
-  box-sizing: border-box;
-
 }
-
+div {
+  /*border: 1px solid Chocolate;*/
+}
 
 /* Navigation Section */
-
-.top-nav-bar {
-  /*border: 1px solid black;*/
-  /*outline: 1px solid red;*/
-  height: 4rem;
-  width: 100%; 
-  margin: 0 auto;
-  position: relative;
-  text-align: right;
-  background-color: white;
-}
-
-.top-nav-bar > .content {
-  margin: 0 auto;
-  width: 970px;
-  /*height: 70px; */
-}
-
 .top-nav-bar > ul {
+  outline: 1px solid blue;
   display: inline-block;
   padding: 0;
-  margin: 0; 
+  margin: 0;
+  
 }
-
+.top-nav-bar {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  outline: 1px solid black;
+  height: 4.5rem;
+  width: 60rem; 
+  margin: 0em 0em;
+  position: relative;
+  text-align: right;
+}
 .logo {
-  margin: 0 15em;
+  margin: 0;
   padding: 0;
   vertical-align: middle;
-  height: 4rem;
+  height: 4.5rem;
   left: 0;
   top: 0;
   position: absolute;
@@ -482,24 +472,9 @@ body {
   margin: 1em;
   padding: 0.5em;
   display: inline-block;
-  /*outline: 1px solid gray;*/
-  color: #999999;
-  vertical-align: middle;
+  outline: 2px solid red;
   
 }
 
-.active {
-  color: black;
-  font-weight: 500;
- }
-  
-li:hover {
-  cursor: pointer;
-  color: black;
-
-}
-
-.active {
-  color: black;
-}
+.links > li:hover { background: yellow; }
 
