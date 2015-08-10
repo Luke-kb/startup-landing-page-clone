@@ -483,12 +483,14 @@ body {
 }
 
 .links > li {
+  margin-left: 5em;
   margin: 1em;
   padding: 0.5em;
   display: inline-block;
   /*outline: 1px solid gray;*/
   color: #999999;
   vertical-align: middle;
+  /*float: right;*/
 
 }
 
@@ -503,6 +505,7 @@ li:hover {
 
 }
 
+
 .top-nav-bar .links > .active {
     color: black;
     font-weight: 500;
@@ -510,7 +513,7 @@ li:hover {
 
 /* Background image section */
 
-.introduction {
+/*.introduction {*/
   background-image: url("../images/karma-background.jpeg") no-repeat;
   background-position: 0 bottom;
   background-repeat: no-repeat;
@@ -530,6 +533,7 @@ li:hover {
 .content {
   text-align: center;
   margin-top: 18em;
+  color: white;
 }
 
 button {
@@ -557,4 +561,8 @@ button:hover {
 
 .introduction, button {
   margin-top: 1.5rem;
+}
+
+h1, h3 {
+  font-weight: 100;
 }
