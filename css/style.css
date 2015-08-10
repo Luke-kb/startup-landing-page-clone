@@ -519,7 +519,7 @@ li:hover {
   overflow: auto;
 }
 
-/*.introduction {*/
+.introduction {
   background: url(images/karma-background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -532,7 +532,7 @@ li:hover {
   margin-top: 18em;
 }
 
-.big-button {
+button {
   margin: 0 auto;
   text-shadow: none;
   border-style: none;
@@ -540,10 +540,19 @@ li:hover {
   color: white;
   border-color: #f15a29;
   border-radius: 4px;
-  width: 9rem;
+  width: 10rem;
+  height: 3rem;
   line-height: 1.33;
   font-size: 1.125rem;
+  font-weight: 100;
+  display: block;
 
+}
+
+button:hover {
+  background-color: #d9400e;
+  border-color: #cf3d0e
+  cursor: pointer;
 }
 
 .introduction, button {
