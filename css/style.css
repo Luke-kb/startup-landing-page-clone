@@ -465,7 +465,7 @@ body {
 .top-nav-bar > ul {
   display: inline-block;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .top-nav-bar .links {
@@ -490,7 +490,7 @@ body {
   /*outline: 1px solid gray;*/
   color: #999999;
   vertical-align: middle;
-  /*float: right;*/
+  /*float: center;*/
 
 }
 
@@ -502,7 +502,6 @@ body {
 li:hover {
   cursor: pointer;
   color: black;
-
 }
 
 
@@ -533,7 +532,11 @@ li:hover {
 .content {
   text-align: center;
   margin-top: 18em;
+}
+
+.introduction h1 {
   color: white;
+  font font-weight: 100;
 }
 
 button {
@@ -563,6 +566,49 @@ button:hover {
   margin-top: 1.5rem;
 }
 
-h1, h3 {
+h1, h2 {
   font-weight: 100;
+}
+
+/*Icon Section*/
+
+li {
+  outline: 2px solid red;
+}
+
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+}
+
+}
+.cases h2 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin: 1.625rem 0 3.125rem;
+}
+
+.devices > li {
+  list-style: none;
+  display: inline-block;
+  width: ;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative; 
+}
+
+.caption {
+
+}
+
+.cases .devices h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0;
+
 }
