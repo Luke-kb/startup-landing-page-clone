@@ -434,11 +434,10 @@ th {
 }
 
 body {
-  background-color: LightGray;
   margin: 0;
   padding: 0;
   border-top: 0;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 
 }
 
@@ -446,20 +445,17 @@ body {
 /* Navigation Section */
 
 .top-nav-bar {
-  /*border: 1px solid black;*/
-  /*outline: 1px solid red;*/
   height: 4rem;
   width: 100%; 
-  margin: 0 auto;
-  position: relative;
-  text-align: right;
+  position: fixed;
   background-color: white;
+  border-bottom: 1px solid #DDD;
+  z-index: 9999;
 }
 
 .top-nav-bar > .content {
   margin: 0 auto;
   width: 970px;
-  /*height: 70px; */
 }
 
 .top-nav-bar > ul {
@@ -515,32 +511,34 @@ li:hover {
 }
 
 /* Background image section */
-/*
+
 .introduction {
-  background-image: url("../images/karma-background.jpeg") no-repeat;
+  background: url(../images/karma-background.jpeg); /*no-repeat center center fixed*/
   background-position: 0 bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 45rem; 
   overflow: auto;
-}*/
+  margin: 0;
+}
 
-.introduction {
+/*.introduction {
   background: url(../images/karma-background.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 .content {
   text-align: center;
   margin-top: 18em;
 }
 
-.introduction h1 {
+.introduction h1, .introduction h3 {
   color: white;
   font font-weight: 100;
+  text-align: center;
 }
 
 button {
@@ -566,27 +564,22 @@ button:hover {
   cursor: pointer;
 }
 
-.introduction, button {
+.introduction > button {
   margin-top: 1.5rem;
 }
 
-h1, h2 {
+h1, h3 {
   font-weight: 100;
 }
 
-/*Icon Section
+Icon Section
 
-li {
-  outline: 2px solid red;
-}
 
-.cases .devices {
+.cases .devices > li {
     width: 33.3333333%;
     display: inline-block;
-    /* styles to assist with debugging */
-    border: 1px solid black;
-    box-sizing: border-box;
-    height: 4em;
+    float: left;
+
 }
 
 }
@@ -613,6 +606,6 @@ li {
 .cases .devices h3 {
   font-weight: 400;
   font-size: 1.5rem;
-  margin: 2.5rem 0 0;
+  margin: 2.5rem 0 1.875rem;
 
 }
