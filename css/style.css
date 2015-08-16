@@ -14,7 +14,7 @@ html {
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Roboto Condensed', sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -496,7 +496,7 @@ body {
 
 .active {
   color: black;
-  font-weight: 500;
+  font-weight: 700;
  }
   
 li:hover {
@@ -507,7 +507,7 @@ li:hover {
 
 .top-nav-bar .links > .active {
     color: black;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* Background image section */
@@ -528,25 +528,34 @@ li:hover {
 }
 
 .introduction h1, .introduction h3 {
+  font-weight: 300;
   color: white;
   text-align: center;
-  font-weight: 100;
 }
 
 .introduction h1 {
   margin-top: 17.5rem;
   font-size: 3.125rem;
+  margin-bottom: 0;
+  font-weight: 300;
 
 }
 
-.introduction h3 {
-  margin-top: 1.25rem;
+.introduction .content h3 {
   font-size: 1.563rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
 
+.big-button {
+  text-align: center;
+  display: inline-block;
+  margin-top: 1.563rem;
 }
 
 button {
-  margin: 0 auto;
+  text-align: center;
+  margin: 0 none;
   text-shadow: none;
   border-style: none;
   background-color: #f15a29;
@@ -559,10 +568,9 @@ button {
   font-size: 1.125rem;
   font-weight: 100;
   display: block;
-
 }
 
-button:hover {
+.big-button button:hover {
   background-color: #d9400e;
   border-color: #cf3d0e
   cursor: pointer;
@@ -587,6 +595,7 @@ button:hover {
   font-size: 2.75rem;
   margin: 1.625rem 0 3.125rem;
   font-weight: 300;
+  font-size: 3em;
 }
 
 .cases .devices > li {
@@ -606,11 +615,17 @@ button:hover {
     float: left;
 }
 
-.caption h3 {
-  width: 150px;
+.cases .devices h3 {
   font-weight: 400;
   font-size: 1.5rem;
-  margin: 2.5rem 4rem 1.875rem;
+  margin: 2.5rem 0em 1.875rem;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+}
+
+.caption h3 {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .cases {
