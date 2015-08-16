@@ -514,21 +514,13 @@ li:hover {
 
 .introduction {
   background: url(../images/karma-background.jpeg); /*no-repeat center center fixed*/
-  background-position: 0 bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45rem; 
+  height: 45.938rem; 
   overflow: auto;
   margin: 0;
 }
-
-/*.introduction {
-  background: url(../images/karma-background.jpeg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
 
 .content {
   text-align: center;
@@ -537,8 +529,20 @@ li:hover {
 
 .introduction h1, .introduction h3 {
   color: white;
-  font font-weight: 100;
   text-align: center;
+  font-weight: 100;
+}
+
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+
+}
+
+.introduction h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+
 }
 
 button {
@@ -568,44 +572,82 @@ button:hover {
   margin-top: 1.5rem;
 }
 
-h1, h3 {
-  font-weight: 100;
+
+/*Icon Section*/
+
+
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
 }
 
-Icon Section
+.cases h2 {
+  font-size: 2.75rem;
+  margin: 1.625rem 0 3.125rem;
+  font-weight: 300;
+}
 
+.cases .devices > li {
+  list-style: none;
+  display: inline-block;
+  width: 13rem;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  vertical-align: baseline; 
+}
 
 .cases .devices > li {
     width: 33.3333333%;
     display: inline-block;
     float: left;
-
 }
 
-}
-.cases h2 {
-  font-weight: 200;
-  font-size: 2.5rem;
-  margin: 1.625rem 0 3.125rem;
-}
-
-.devices > li {
-  list-style: none;
-  display: inline-block;
-  width: ;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  position: relative; 
-}
-
-.caption {
-
-}
-
-.cases .devices h3 {
+.caption h3 {
+  width: 150px;
   font-weight: 400;
   font-size: 1.5rem;
-  margin: 2.5rem 0 1.875rem;
+  margin: 2.5rem 4rem 1.875rem;
+}
 
+.cases {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+
+/* Footer section */
+
+.icons li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer .header {
+  font-weight: 500;
+  display: block;
+  padding-bottom: 6px;
+
+}
+
+footer hr {
+  width: 75%;
+}
+
+footer i {
+  border: 1px solid #eaebec;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+
+}
+
+.social .content {
+  margin-top: 2em;
 }
